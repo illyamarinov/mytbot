@@ -5,5 +5,5 @@ const bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/\/start/, (msg, match) => {
   const chatId = msg.chat.id;
-  bot.sendMessage(chatId, 'Привет, я твой новый бот!');
+  bot.sendMessage(chatId, 'Hello!');
 });
